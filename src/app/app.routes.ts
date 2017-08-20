@@ -8,7 +8,12 @@ export const appRoutes = [
         pathMatch: 'full'
     },
     {
+        // path: 'home/:page',
         path: 'home',
+        loadChildren: './home/home.module#HomeModule'
+    },
+    {
+        path: 'home/:page',
         loadChildren: './home/home.module#HomeModule'
     },
     {
